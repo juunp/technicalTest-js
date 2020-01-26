@@ -1,0 +1,38 @@
+{
+  "name": "technicalTests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "courtepaille": "npx webpack && mkdirp ./courtepaille/input && ncp ./courtepaille/input ./dist/courtepaille/input && node ./dist/courtepaille/courtepaille.js",
+    "frame": "npx webpack && mkdirp ./frame/input && ncp ./frame/input ./dist/frame/input && node ./dist/frame/frame.js",
+    "reseau": "npx webpack && mkdirp ./reseau/input && ncp ./reseau/input ./dist/reseau/input && node ./dist/reseau/reseau.js",
+    "test": "mocha --require ts-node/register **/test/*.spec.ts",
+    "clean": "rimraf -rf ./dist"
+  },
+  "author": "jp",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.2.7",
+    "@types/chai-as-promised": "^7.1.2",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^13.1.8",
+    "@types/sinon": "^7.5.1",
+    "@types/sinon-chai": "^3.2.3",
+    "awesome-typescript-loader": "^5.2.1",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mkdirp": "^0.5.1",
+    "mocha": "^7.0.0",
+    "ncp": "^2.0.0",
+    "rimraf": "^3.0.0",
+    "should": "^13.2.3",
+    "sinon": "^8.1.1",
+    "sinon-chai": "^3.4.0",
+    "source-map-loader": "^0.2.4",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10"
+  }
+}

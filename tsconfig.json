@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es5",
+        "lib": [
+            "es2019"
+          ],
+        "noFallthroughCasesInSwitch": true,
+        "downlevelIteration": true
+    },
+    "include": [
+        "./**/**/*"
+    ]
+}
