@@ -27,3 +27,7 @@ same thing for exercice reseau
 `npm run reseau`
 
 `npm --file=\input\input2.txt run reseau`   
+
+you can also run tests with
+
+`npm run test`
